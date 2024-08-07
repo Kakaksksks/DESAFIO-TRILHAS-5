@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    min-width: 100vh;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    padding: 20px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+.logo{
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    color: white;
+}
+.navbar ul{
+    list-style: none;
+}
+.navbar ul li{
+    position: relative;
+    float: left;
+}
+.navbar ul li a{
+    font-family: "Krona One";
+    font-weight: 400;
+    font-size: 20px;
+    padding: 20px;
+    color: white;
+    display: block;
+}
+.navbar ul li a:hover{
+    background-color: rgb(0, 225, 255);
+    color: black;
+}    
+.navbar ul li ul{
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: aqua;
+    display: none;
+}
+.navbar ul li ul li{
+    width: 100%;
+    border-top: 1px solid rgba(0,0,0,rgba(0,0,0,.1));
+}
+.navbar ul li ul li ul{
+    left: 200px;
+    top: 0;
+}
+.navbar ul li:focus-within > ul,
+.navbar ul li:hover > ul{
+    display: initial;
+}
+
+#menu-bar{
+    display: none;
+}
+header label {
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+
+@media(max-width:991px){
+   
+    header{
+        padding: 20px;
+    }
+
+    header label{
+        display: initial;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: aqua;
+        border-top: 1px solid rgba(0,0,0,.1);
+        display: none;
+    }
+
+    header .navbar ul li{
+        width: 100%;
+    }
+
+    header .navbar ul li ul{
+        position: relative;
+        width: 100%;
+    }
+
+    header .navbar ul li ul li{
+        background: aqua;
+    }
+
+    header .navbar ul li ul li ul{
+        width: 100%;
+        left: 0;
+    }
+
+    #menu-bar:checked ~ .navbar{
+        display: initial;
+    }
+}
+
+main{
+    background-image: url("sao-luis-maranhao-divulgacao-scaled.jpg");
+    height: 700px;   
+}
+
+@media(max-width:1430px){
+    .imagens{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .conteudo_{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }   
+    .conteudo__{
+        margin-top: 15%;
+    }
+}
+
+@media(max-width:1200px){
+    .conteudo__{
+        margin-top: 25%;
+    }
+}
+
+@media(max-width:1200px){
+    .conteudo__{
+        margin-top: 30%;
+    }
+}
+
+.conteudo_{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.teste{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+}
+
+.titulo1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.titulo{
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    margin-top: 19%;
+    color: white;
+}
+.paragrafo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-size: 24px;
+
+}
+
+.sobrema{
+    margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.sub2{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    width: 700px;
+    border-radius: 5px;
+    background-color: dimgray;
+    font-family: "Krona One", sans-serif;
+    font-size: 25px;
+}
+.p2{
+    font-family: "Montserrat", sans-serif;
+    font-size: 25px;
+}
+.culinaria{
+    font-family: "Montserrat";
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    width: 40%;
+}
+
+.pai{
+    background-color: #3acdf0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.container{
+    background-color: #fafafa;
+    border-radius: 14px;
+    margin: 14px;
+    width: 100%;
+    max-width: 600px;
+    box-sizing: 0 3px 5px rgba(0,0,0,0.5);
+}
+.xnxx{
+    background-color: #3acdf0;
+    /* background: linear-gradient(120deg, #3acdf0 0%, #8bb0ff 100%); */
+    padding: 24px;
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    color: black;
+}
+.form{
+    padding: 18px;
+}
+.form-content{
+    font-family: "Montserrat";
+    margin-bottom: 8px;
+    padding-bottom: 18px;
+    position: relative;
+}
+.form-content label {
+    display: inline-block;
+    margin-bottom: 4px;
+}
+.form-content input{
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    padding: 8px;
+    border: 2px solid #dfdfdf;
+}
+.form-content a{
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    visibility: hidden;
+
+}
+.form button{
+    background-color: #00c3ff;
+    color: #fff;
+    width: 100%;
+    border-radius: 14px;
+    padding: 10px;
+    border: 0;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 14px;
+}
+
+.form-content.error input{
+    border-color: #ff3b25;
+}
+
+.form-content.error a{
+    visibility: visible;
+    color: #ff3b25
+}
